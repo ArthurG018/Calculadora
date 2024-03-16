@@ -152,7 +152,7 @@ function op(num1,num2,op) {
             result = num1-num2;
             break;
     
-        case 'x':
+        case '*':
                 result = num1*num2;
                 break;
         case '÷':
