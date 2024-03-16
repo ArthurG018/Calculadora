@@ -35,7 +35,7 @@ function Operar(content) {
     if(content.value == 'image'){
         content.textContent == '=';
     }
-    if(content.value == 'X'){
+    if(content.textContent == 'X'){
         content.textContent == 'x';
     }
     switch (content.textContent) {
