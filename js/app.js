@@ -4,7 +4,7 @@ var componentHistory = document.getElementById('txt_historial_result');
 var histories = [];
 var operators = [];
 var numbers = [];
-var operations = ['-','+','÷','AC','=','*','%'];
+var operations = ['-','+','÷','AC','=','x','%'];
 
 components.forEach(component =>{
     component.addEventListener('click', function () {
@@ -34,6 +34,9 @@ function Operar(content) {
     copyArray.pop();
     if(content.value == 'image'){
         content.textContent == '=';
+    }
+    if(content.textContent == 'X'){
+        content.textContent == 'x';
     }
     switch (content.textContent) {
         case operations[0]:
@@ -152,7 +155,7 @@ function op(num1,num2,op) {
             result = num1-num2;
             break;
     
-        case '*':
+        case 'x':
                 result = num1*num2;
                 break;
         case '÷':
