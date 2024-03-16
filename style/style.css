@@ -100,3 +100,47 @@ margin: 0;
 .content-operator-color{
     background-color: #6d6f71c8;
 }
+
+@media screen and (max-width: 800px) {
+    .button{
+        width: 20px;
+        background-color: #7c858fa5;
+        padding: 28px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-operator-color{
+        background-color: #6d6f71c8;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .content-body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-view{
+        height: 50px;
+    }
+
+    .content-buttons{
+        margin-inline: 0px;
+    }
+
+    .button{
+        width: 10px;
+        background-color: #7c858fa5;
+        padding: 28px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .content-operator-color{
+        background-color: #6d6f71c8;
+    }
+}
